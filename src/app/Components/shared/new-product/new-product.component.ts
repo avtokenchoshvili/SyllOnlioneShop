@@ -19,6 +19,7 @@ export class NewProductComponent {
   constructor(private Products: ShoesService) {
     this.Products.get().subscribe((data: any[]) => {
       this.product = data;
+      console.log(data, 'Product')
 
     })
   }

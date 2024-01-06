@@ -13,7 +13,7 @@ export class ShoesService {
 
 
   get(): Observable<any> {
-    return this.httpClient.get(this.serverUrl)
+    return this.httpClient.get('http://localhost:3000/posts')
   }
 
   getProductById(productId: number): any {
