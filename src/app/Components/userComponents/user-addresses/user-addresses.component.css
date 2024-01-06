@@ -1,0 +1,8 @@
+.text-secondary{
+    text-decoration: none !important;
+    align-items: center;
+    text-align: center;
+}
+.text-secondary i {
+    margin: 7px !important;
+}

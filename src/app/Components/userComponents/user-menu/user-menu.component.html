@@ -1,0 +1,20 @@
+<div class="user-menu">
+    <div class="user-image mb-3 position-relative" style="display: inline-block;">
+        <img [src]="userImagePath" alt="User" class="img-fluid rounded-circle" style="width: 100px;">
+        <input type="file" id="imageUpload" hidden (change)="onImageUpload($event)" />
+        <label for="imageUpload" class="upload-icon position-absolute bottom-0 end-0">
+            <i class="bi bi-camera"></i>
+        </label>
+
+    </div>
+
+    <nav class="nav flex-column mt-3">
+
+        <a class="nav-link active" href="">Dashboard</a>
+        <a class="nav-link" href="">Orders</a>
+        <a class="nav-link" href="">Addresses</a>
+        <a class="nav-link" href="">Account details</a>
+        <a class="nav-link" href="">Wishlist</a>
+        <a class="nav-link" href="">Logout</a>
+    </nav>
+</div>

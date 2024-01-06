@@ -1,0 +1,179 @@
+<section class="container sproduct my-1 pt-5">
+  <div class="title">
+    <h1>Shop</h1>
+    <p>
+      At vero eos et accusamus et iusto odio dignissimos ducimus qui blabditiis
+      voluotatum delenitit.
+    </p>
+  </div>
+</section>
+
+<section class="trending-product" id="trending">
+  <div class="center-text">
+    <h2>Our Trending<span>Products</span></h2>
+  </div>
+  <article>
+    <div>
+      <button
+        class="btn"
+        role="button"
+        data-bs-toggle="button"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+      >
+        Filter
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start row"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title" id="offcanvasScrollingLabel">Filter</h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <h1>categorie</h1>
+            <div>
+              <ul>
+                <li>
+                  <a href="">Home & Decor</a>
+                </li>
+                <li>
+                  <a href="">Clothing</a>
+                </li>
+                <li>
+                  <a href="">Accessories</a>
+                </li>
+                <li>
+                  <a href="">Outdoor</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h1>COLOR</h1>
+            <div>
+              <button class="button"></button>
+              <button class="button button2"></button>
+              <button class="button button3"></button>
+              <button class="button button4"></button>
+            </div>
+          </div>
+          <div class="size">
+            <h1>Size</h1>
+            <div>
+              <button class="button5">S</button>
+              <button class="button6">M</button>
+              <button class="button7">L</button>
+              <button class="button8">XL</button>
+            </div>
+          </div>
+          <div class="size">
+            <h1>PRICE</h1>
+            <div>
+              <mat-slider color="primary" min="200" max="500">
+                <input color="warn" value="300" matSliderStartThumb />
+                <input color="warn" value="400" matSliderEndThumb />
+              </mat-slider>
+            </div>
+          </div>
+          <div class="size">
+            <h1>STYLE</h1>
+
+            <div class="ex3">
+              <ul>
+                <li>
+                  <a href="">Home & Decor</a>
+                </li>
+                <li>
+                  <a href="">Clothing</a>
+                </li>
+                <li>
+                  <a href="">Accessories</a>
+                </li>
+                <li>
+                  <a href="">Outdoor</a>
+                </li>
+                <li>
+                  <a href="">Modern</a>
+                </li>
+                <li>
+                  <a href="">Streetwear</a>
+                </li>
+                <li>
+                  <a href="">colorfull</a>
+                </li>
+                <li>
+                  <a href="">Patchwork</a>
+                </li>
+                <li>
+                  <a href="">Bochemian</a>
+                </li>
+                <li>
+                  <a href="">Vintage</a>
+                </li>
+                <li>
+                  <a href="">Outdoor</a>
+                </li>
+                <li>
+                  <a href="">Accessories</a>
+                </li>
+                <li>
+                  <a href="">Outdoor</a>
+                </li>
+                <li>
+                  <a href="">Modern</a>
+                </li>
+                <li>
+                  <a href="">Streetwear</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Products col">
+      <div *ngFor="let item of products" class="row">
+        <img [src]="item.image" alt="" />
+        <div class="prpduct-text">
+          <h5>sale</h5>
+        </div>
+        <div class="heart-icon">
+          <mat-icon>favorite_border</mat-icon>
+        </div>
+        <div class="ratting">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+        </div>
+        <div class="price">
+          <h4>{{ item.title }}</h4>
+          <p>${{ item.price }}</p>
+          <button class="btn btn-dark" routerLink="/shop/inners/{{ item.id }}">
+            shop
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div class="btn2">
+    <button>Load More</button>
+  </div>
+</section>
+
+<app-footer></app-footer>

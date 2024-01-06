@@ -1,0 +1,78 @@
+<article>
+  <mat-tab-group>
+    <mat-tab label="Best Sellers">
+      <section class="container1">
+        <div *ngFor="let item of Shoes" class="row mx-auto container-fluid">
+          <div class="product text-center">
+            <img class="img-fluid mb-3" [src]="item.image" alt="" />
+            <div class="star">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+            </div>
+            <h5 class="p-name">{{ item.title }}</h5>
+            <h4 class="p-price">${{ item.price }}</h4>
+            <button
+              class="btn btn-dark"
+              routerLink="/products/inner/{{ item.id }}"
+            >
+              Buy now
+            </button>
+          </div>
+        </div>
+      </section>
+    </mat-tab>
+
+    <mat-tab label="New Arrivalss">
+      <section class="container1">
+        <div *ngFor="let item of Shoes" class="row mx-auto container-fluid">
+          <div class="product text-center">
+            <img class="img-fluid mb-3" [src]="item.image" alt="" />
+            <div class="star">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+            </div>
+            <h5 class="p-name">{{ item.title }}</h5>
+            <h4 class="p-price">${{ item.price }}</h4>
+            <button
+              class="btn btn btn-dark"
+              routerLink="/products/inner/{{ item.id }}"
+            >
+              Buy now
+            </button>
+          </div>
+        </div>
+      </section>
+    </mat-tab>
+    <mat-tab label="Sale">
+      <section class="container1">
+        <div *ngFor="let item of Shoes" class="row mx-auto container-fluid">
+          <div class="product text-center">
+            <img class="img-fluid mb-3" [src]="item.image" alt="" />
+            <div class="star">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+            </div>
+            <h5 class="p-name">{{ item.title }}</h5>
+            <h4 class="p-price">${{ item.price }}</h4>
+            <button
+              class="btn btn-dark"
+              routerLink="/products/inner/{{ item.id }}"
+            >
+              Buy now
+            </button>
+          </div>
+        </div>
+      </section>
+    </mat-tab>
+  </mat-tab-group>
+  <div class="btn2">
+    <button>Load More</button>
+  </div>
+</article>
+

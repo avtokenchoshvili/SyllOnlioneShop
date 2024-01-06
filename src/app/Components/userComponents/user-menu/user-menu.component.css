@@ -1,0 +1,109 @@
+label{
+    position: absolute;
+    top: 66px;
+  left: 60px;
+  border-radius: 50%;
+}
+.user-image .upload-icon {
+    width: 40px;
+    height: 40px;
+   color: white;
+background-color: 
+rgba(18, 18, 18, 0.7);
+    /* Rest of your styles */
+    box-shadow: rgba(0, 0, 0, 0.0364);
+    align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.user-menu {
+    width: 100%;
+    max-width: 250px; /* Maximum width of the menu */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px; /* Space below the menu */
+}
+
+.user-image {
+    text-align: center;
+    margin-bottom: 0px!important;
+ 
+}
+.status-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: #4cd137;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.user-image img {
+    width: 80px; /* Adjust size as needed */
+    border-radius: 50%; /* Circular image */
+    /* Space below the image */
+    width: 100px !important;
+    height: 100px !important;
+  
+  object-fit: cover;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block; /* or block depending on your layout */
+    text-decoration: none; /* removes the default underline */
+    color: #000; /* or any color you prefer */
+    padding-bottom: 5px; /* optional: to give space for the underline */
+  }
+
+.nav-link:hover {
+    color: #6c757d;
+    text-decoration: none; /* No underline on hover */
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0; /* start with 0 width */
+    height: 2px; /* thickness of the underline */
+    bottom: 0; /* position it at the bottom of the link */
+    left: 50%; /* center the underline */
+    background-color:rgb(226, 133, 119); /* color of the underline */
+    transition: width 0.3s ease, left 0.3s ease; /* animate the width and horizontal position */
+  }
+  
+  /* Animate the underline on hover */
+  .nav-link:hover::after {
+    width: 70%; /* full width of the link */
+    left: 0; /* reset left position */
+  }
+
+/* Mobile View */@media (max-width: 768px) {
+    .user-menu {
+        width: auto; /* Full width on smaller screens */
+        margin-bottom: 10px; /* Less space below the menu on mobile */
+        margin-left: auto; /* Center the menu on mobile */
+        margin-right: auto; /* Center the menu on mobile */
+        text-align: center; /* Center text for small devices */
+    }
+
+    .user-image img {
+        width: 60px; /* Smaller image on mobile */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* More space between links on mobile */
+    }
+
+    .nav.flex-column {
+        align-items: center; /* Center flex items on mobile */
+    }
+}
+

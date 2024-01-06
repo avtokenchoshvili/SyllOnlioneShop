@@ -1,0 +1,31 @@
+<!-- <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <h1>New Arrivals</h1>
+<wts-slider class="slidr" [options]="options">
+  <div *ngFor="let item of product" slider class="__slider">
+    <img [src]="item.image" alt="" />
+    <div class="btnn">
+      <p>{{ item.category }}</p>
+    </div>
+  </div>
+</wts-slider>
+    </div>
+  </div>
+</div> -->
+
+<section class="categories container section">
+  <h1 class=""><span>New-</span>Arrivals</h1>
+
+  <div class="categories__container swiper">
+
+    <div *ngFor="let item of product" slider class="category__item __slider">
+      <img class="category__img" [src]="item.image" alt="" />
+
+      <div class="btnn">
+        <p class="category__title">{{ item.title }}</p>
+      </div>
+    </div>
+
+  </div>
+</section>

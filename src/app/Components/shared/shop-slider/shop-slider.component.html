@@ -1,0 +1,15 @@
+<section class="categories container section">
+  <h1 class=""><span>New-</span>Arrivals</h1>
+
+  <div class="categories__container swiper">
+
+    <div *ngFor="let item of shop" slider class="category__item __slider">
+      <img class="category__img" [src]="item.image" alt="" />
+
+      <div class="btnn">
+        <p class="category__title">{{ item.title }}</p>
+      </div>
+    </div>
+
+  </div>
+</section>

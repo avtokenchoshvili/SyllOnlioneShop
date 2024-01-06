@@ -1,0 +1,43 @@
+/* 
+
+section{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside div h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+aside div p {
+    width: 360px;
+}
+
+#imageBody{
+    width: 750px;
+    margin: auto;
+}
+
+#imageBody img{
+    width: 100%;
+    object-fit: cover;
+    height: 650px;
+    color: black;
+} */
+
+
+.row {
+    margin-top: 50px;
+}
+
+.text-1 h1 {
+    text-align: center;
+}

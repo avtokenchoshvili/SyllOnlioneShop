@@ -1,0 +1,56 @@
+/* 
+
+#smartBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.textSmart p{
+width: 346px;
+}
+
+.textSmart h1{
+    font-weight: 500;
+}
+
+.smartImge img{
+    width: 250px;
+    object-fit: cover;
+}
+
+
+
+.text-2 {
+    display: flex;
+    align-items: center;
+ }
+.text-link  {
+    margin: 0px 5px 0px 0px;
+}
+.text-2 .text-link a {
+    font-weight: 500;
+     color: black;
+}
+.link-icon{
+width: 20px;
+height: 15px;
+}
+
+.link-icon mat-icon{
+    font-size: 17px;
+    color: white;
+}
+
+
+ */
+
+
+.row {
+    margin-top: 100px;
+}
+
+.img-fluid{
+    cursor: pointer;
+}
